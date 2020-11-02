@@ -28,7 +28,7 @@ export const getLugaresById = async (request, response, next) => {
   // Called a function that is declared in the resource model
   const lugaresResource = await getLugaresResourceById(id);
 
-  // If we have a music resource
+  // If we have a pajaros resource
   if (lugaresResource) {
     // we return resource and 200 OK status
     return response.status(200).send(lugaresResource);
