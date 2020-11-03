@@ -1,93 +1,28 @@
-.body {
-background-image: url ("https://senderismosevilla.net/wp-content/uploads/2016/12/molimos-panoramica-copia.jpg");
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-color: #66999b;
- }
-
-.rectangle {
-  background-color: #0093D1;
-  width: 266px;
-  height: 891px;
+.molino {
+display:flex;
 }
 
+.pajaritoh{
+
+}
+
+
 .text-box {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   position: relative;
-  left: 300px;
-  bottom: -500px;
+  left: 10px;
+  bottom: 0px;
   color: #47525E;
   font-family: Lato;
   font-size: 20px;
   line-height: 26px;
-  width: 857px;
+  width: 1400px;
   text-align: left;
 }
 
 
 html {
   font-family: "Open Sans", sans-serif;
-}
-
-h1 {
-  color: #444;
-}
-
- .btn {
-    padding: 1em 2.1em 1.1em;
-    border-radius: 3px;
-    margin: 8px 8px 8px 8px;
-    color: #fbdedb;
-    background-color: #fbdedb;
-    display: inline-block;
-    background: #e74c3c;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    font-family: sans-serif;
-    font-weight: 800;
-    font-size: .85em;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    position: relative;
-}
-.btn:hover, .btn:focus {
-    opacity: 0.8;
-}
-.btn:active {
-    -webkit-transform: scale(0.80);
-    -moz-transform: scale(0.80);
-    -ms-transform: scale(0.80);
-    -o-transform: scale(0.80);
-    transform: scale(0.80);
-}
-.btn.block {
-    display: block !important;
-}
-.btn.circular {
-  border-radius: 50em !important;
-}
-.blue {
-    background-color: #7abedf;
- 
-  }
-  
-  .text-box {
-  color: #47525E;
-  font-family: Lato;
-  font-size: 20px;
-  line-height: 26px;
-  width: 857px;
-  text-align: left;
-}
-    .responsive {
-  width: 100%;
-  height: auto;
 }

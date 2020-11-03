@@ -6,13 +6,16 @@ import Footer from "./Footer.js"
 import Pajaros from "./Pajaros.js"
 import Lugares from "./Lugares.js"
 import PajaroInfo from "./PajaroInfo.js"
+import SideBar from "./SideBar.js"
+
 
 
 const App = () => {
 return (
     <>
       <BrowserRouter>
-        <Header/>
+      <Header />
+      <SideBar />
         <Switch>
         <Route exact path='/' component={Home} />
                 <Route path='/pajaros/:id' component={PajaroInfo} />
