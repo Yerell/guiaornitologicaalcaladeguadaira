@@ -8,12 +8,13 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "workspaces":[
+  "workspaces": [
     "client",
     "server"
   ],
   "private": "true",
 "scripts": {
+  "heroku-postbuild": "yarn workspace client build",
   "start": "yarn workspace server start"
 }
 

@@ -14,7 +14,8 @@
   },
   "type": "module",
   "scripts": {
-    "start": "yarn nodemon ./index.js",
+    "dev": "yarn nodemon ./index.js",
+    "start": "node ./index.js",
     "seed": "node ./data/seeds.js"
   }
 }
