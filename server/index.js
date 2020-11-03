@@ -6,9 +6,12 @@ import mongoose from 'mongoose';
 import httpLoggerMiddleware from './middleware/logger-middleware.js';
 import jsonResponseMiddleware from './middleware/json-response.js';
 import errorHandlerMiddleware from './middleware/error-handler.js';
-
 import pajarosRouter from './routes/pajaros.js';
 import lugaresRouter from './routes/lugares.js';
+import cors from 'cors';
+
+import dotenv from 'dotenv';
+
 
 const HOST = '127.0.0.1';
 const PORT = 5000;
@@ -23,11 +26,13 @@ mongoose.connect(databaseURI, {
 });
 
 // El servidor utilizará como deserializador de data bodyparser y deserializara en JSON
+dotenv.config();
 server.use(bodyParser.json());
 // Utiliza un middleware que permite tener descripciones mas especificas en la consola
 server.use(httpLoggerMiddleware);
 // Utiliza un middleware que permite crear headers de respuesta que indiquen que el contenido es JSON
 server.use(jsonResponseMiddleware);
+server.use(cors());
 
 // El router de musica
 server.use(pajarosRouter);
@@ -37,7 +42,8 @@ server.use(lugaresRouter);
 server.use(errorHandlerMiddleware);
 
 // Inicializa el servidor
-server.listen(PORT, () =>
-  // utilizando el logger de la libreria winston imprimo en consola que el servidor se ha iniciado
-  logger.info(`server listening ${JSON.stringify({ HOST, PORT })}`),
+
+
+server.listen(process.env.PORT, () =>
+  console.log(`Running on port ${process.env.PORT}`),
 );
