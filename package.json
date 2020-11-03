@@ -12,6 +12,7 @@
     "client",
     "server"
   ],
+  "private": "true",
 "scripts": {
   "start": "yarn workspace server start"
 }
