@@ -19,12 +19,14 @@ export const databaseURI = 'mongodb://localhost/pajaros';
 // const databaseURI = 'mongodb://localhost:2700/mongoose-intro
 // Creacion del servidor
 const server = express();
-mongoose.connect(databaseURI, {
+mongoose.connect(process.env.MONGODB_URI);
+
+/*mongoose.connect(databaseURI, {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
+*/
 // El servidor utilizará como deserializador de data bodyparser y deserializara en JSON
 dotenv.config();
 server.use(bodyParser.json());
@@ -47,3 +49,5 @@ server.use(errorHandlerMiddleware);
 server.listen(process.env.PORT, () =>
   console.log(`Running on port ${process.env.PORT}`),
 );
+
+
