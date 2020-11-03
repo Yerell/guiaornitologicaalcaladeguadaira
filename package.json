@@ -8,13 +8,10 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "workspaces":[
-    "client",
-    "server"
-  ],
+  
   "private": "true",
 "scripts": {
-  "start": "yarn workspace server start"
+  "start": "yarn server start"
 }
 
 }
