@@ -21,12 +21,12 @@ export const databaseURI = 'mongodb://localhost/pajaros';
 const server = express();
 mongoose.connect(process.env.MONGODB_URI);
 
-/*mongoose.connect(databaseURI, {
+mongoose.connect(databaseURI, {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-*/
+
 // El servidor utilizará como deserializador de data bodyparser y deserializara en JSON
 dotenv.config();
 server.use(bodyParser.json());

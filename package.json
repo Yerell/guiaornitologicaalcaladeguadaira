@@ -13,10 +13,8 @@
     "server"
   ],
   "private": "true",
-"scripts": {
-  "heroku-postbuild": "yarn workspace client build",
-  "start": "yarn workspace server start"
+  "scripts": {
+    "heroku-postbuild": "yarn workspace client build",
+    "start": "yarn workspace server start"
+  }
 }
-
-}
-
