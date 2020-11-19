@@ -5,6 +5,7 @@
   "repository": "git@github.com:Yerell/guiaornitologicaalcaladeguadaira.git",
   "author": "Yerell <Yerell.software@gmail.com>",
   "license": "MIT",
+  "type":"module",
   "devDependencies": {
     "lerna": "^3.22.1"
   },
@@ -14,7 +15,6 @@
   ],
   "private": "true",
   "scripts": {
-    "heroku-postbuild": "yarn workspace client build",
     "start": "yarn workspace server start"
   }
 }

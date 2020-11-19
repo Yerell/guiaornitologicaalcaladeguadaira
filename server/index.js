@@ -15,7 +15,7 @@ import dotenv from 'dotenv';
 
 const HOST = '127.0.0.1';
 const PORT = 5000;
-export const databaseURI = process.env.MONGODB_URI || 'mongodb://localhost/pajaros';
+export const databaseURI = process.env.MONGODB_URL || 'mongodb://localhost/pajaros';
 // const databaseURI = 'mongodb://localhost:2700/mongoose-intro
 // Creacion del servidor
 const server = express();
