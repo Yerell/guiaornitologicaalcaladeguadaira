@@ -4,7 +4,7 @@ import {Link} from  "react-router-dom"
 
 const PajarosCard = ({ Title, Media, _id }) => (
 <div>
-    <Link to ={`/pajaros/${_id}`}>
+    <Link to={`/pajaros/${_id}`}>
     <div className="card">
         <div className="card-header">
           <h4 className="card-header-title">{Title}</h4>
