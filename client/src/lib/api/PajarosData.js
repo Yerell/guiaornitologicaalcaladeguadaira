@@ -1,6 +1,8 @@
+const { REACT_APP_SERVER_URL }= process.env
+
 export const getPajaros = async () => {
   try {
-    const response = await fetch("/pajaros");
+    const response = await fetch(`${REACT_APP_SERVER_URL}/pajaros`);
     return await response.json();
   }
   
@@ -12,7 +14,7 @@ export const getPajaros = async () => {
 }
 export const getPajaros1 = async (id) => {
   try {
-    const response = await fetch(`/pajaros/${id}`)
+    const response = await fetch(`${REACT_APP_SERVER_URL}/pajaros/${id}`)
     return await response.json();
  } 
   catch (error) {
